@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/globals.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+</head>
+
+<body>
+
+
+    {{!-- <nav>
+        <h4>Node MySQL Login</h4>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+        </ul>
+    </nav> --}}
+
+    <div class="frame">
+        <form action="/login" method="POST">
+            <div class="text-wrapper-6">Welcome</div>
+            <div class="sign-in-button">
+                <button type="submit" class="overlap-group">
+                    <div class="text-wrapper">Sign in</div>
+                </button>
+            </div>
+            <div class="overlap-wrapper">
+                <a href="/register">
+                    <button type="button" class="overlap-group">
+                        <p class="p">Don't have an account? Register</p>
+                    </button>
+                </a>
+            </div>
+            <div class="email-form">
+                <div class="overlap">
+                    <input type="text" class="form-control rectangle" id="email-login" name="email">
+                </div>
+                <div class="text-wrapper-2">Email</div>
+            </div>
+            <div class="password-form">
+                <input type="password" class="form-control div-wrapper" id="password-login" name="password">
+                <div class="text-wrapper-4">Password</div>
+            </div>
+            <div class="remember-forgot">
+                <input type="checkbox" class="rectangle-2" />
+                <div class="text-wrapper-5">Remember me</div>
+            </div>
+            <div class="overlap-2">
+                <a href="forgot-password" class="text-wrapper-7">Forgot password</a>
+            </div>
+            <div class="div-2">
+                <div class="overlap-3">
+                    <a href="privacy-policy" class="text-wrapper-8">Privacy policy</a>
+                </div>
+                <div class="overlap-4">
+                    <a href="toc" class="text-wrapper-9">Terms and Conditions</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {{#if message }}
+    <h4 class="alert alert-info mt-4">{{message}}</h4>
+    {{/if}}
+
+</body>
+
+</html>
